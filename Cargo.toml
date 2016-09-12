@@ -1,0 +1,12 @@
+[package]
+name = "gindios"
+version = "0.1.0"
+authors = ["Julian Gindi <_@gindi.io>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
