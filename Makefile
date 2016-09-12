@@ -1,12 +1,11 @@
 default: run
 
-build: os.iso
+build: build/os.iso
 
 build/multiboot_header.o: multiboot_header.asm
 	mkdir -p build
 	nasm -f elf64 multiboot_header.asm -o build/multiboot_header.o
 
-build/boot.o: boot.asm
 	mkdir -p build
 	nasm -f elf64 boot.asm -o build/boot.o
 
